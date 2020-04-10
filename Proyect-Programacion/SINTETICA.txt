@@ -1,0 +1,77 @@
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 14
+Server version: 8.0.15 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++-------------------------------+
+| Database                      |
++-------------------------------+
+| abogados                      |
+| alumno                        |
+| bancodecredito                |
+| bdprocedimientos              |
+| comandotee                    |
+| correcion_examen              |
+| ejemplos                      |
+| ejercicios_en_clase           |
+| empresa                       |
+| empresa_tiendas               |
+| examen_práctico_mysql         |
+| futbol_db                     |
+| information_schema            |
+| laboratorio                   |
+| matricula                     |
+| mydb                          |
+| mysql                         |
+| performance_schema            |
+| practica_en_clasee            |
+| practicalibro                 |
+| practicas_preprofecionales    |
+| practicas_preprofesionalesbca |
+| pro_alma                      |
+| procesos_almacenados          |
+| sintetica                     |
+| sys                           |
+| tarea_conexion_basedatos      |
+| tarea_practica22              |
+| tutorias                      |
+| venta_motocicletas            |
+| video_club_peliculas          |
+| vista                         |
+| vistas                        |
++-------------------------------+
+33 rows in set (0.00 sec)
+
+mysql> use sintetica;
+Database changed
+mysql> show tables;
++---------------------+
+| Tables_in_sintetica |
++---------------------+
+| clientes            |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql> describe clientes;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| Cedula    | int(11)     | NO   | PRI | NULL    |       |
+| Nombres   | varchar(20) | YES  |     | NULL    |       |
+| Apellidos | varchar(20) | YES  |     | NULL    |       |
+| Teléfono  | int(10)     | YES  |     | NULL    |       |
+| Direccion | varchar(30) | YES  |     | NULL    |       |
+| Edad      | int(2)      | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql>
